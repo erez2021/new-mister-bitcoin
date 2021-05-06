@@ -1,0 +1,5 @@
+<div class="card-container">
+    <a *ngFor="let contact of contacts; index as idx" [routerLink]="['/contact',contact._id]" >
+<app-contact-preview  [contact]="contact" ></app-contact-preview>
+</a>
+</div>
